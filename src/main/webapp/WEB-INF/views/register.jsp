@@ -30,31 +30,31 @@
 	<jsp:include page="header.jsp" />
 	<div class="container">
 		<div class="row">
-			<h1>Services</h1>
+			<h1>Register</h1>
 		</div>
-		<c:url value="/login" var="loginVar"/>
+		<c:url value="/register" var="loginVar"/>
 		<form id="appointment-form" action="${loginVar}" method="POST">
 			<div class="form-group">
-				<label>Username</label>
-				<input name="custom_username" class="form-control" />
+				<label for="make">Username</label>
+				<input name="username" class="form-control" />
 			</div>
 			<div class="form-group">
-				<label>Password</label>
-				<input type="password" name="custom_password" class="form-control" />
+				<label for="make">First Name</label>
+				<input name="firstName" class="form-control" />
 			</div>
 			<div class="form-group">
-				<label>Automobile Make</label>
-				<input name="make" class="form-control" />
+				<label for="make">Last Name</label>
+				<input name="lastName" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="make">Email</label>
+				<input name="email" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="model">Password</label>
+				<input type="password" name="password" class="form-control" />
 			</div>
 			<sec:csrfInput/>
-
-			<c:if test="${param.logout != null }">
-				<p>You have successfully been logged out.</p>
-			</c:if>
-
-			<c:if test="${param.error != null }">
-				<p>Invalid Username and Password.</p>
-			</c:if>
 
 			<button type="submit" id="btn-save" class="btn btn-primary">Login</button>
 		</form>

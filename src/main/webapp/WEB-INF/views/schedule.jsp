@@ -16,20 +16,24 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 <!-- Latest Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+	type="text/javascript"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="<c:url value="/resources/js/global.js"/>"></script>
+
 </head>
 <body>
 	<jsp:include page="header.jsp"/>
 	<div class="container">
 		<div class="row">
-			<h1>Services</h1>
+			<h1>Employee Schedule</h1>
 			<ul class="list-group">
-				<li class="list-group-item">Battery Change</li>
-				<li class="list-group-item">Oil Change</li>
-				<li class="list-group-item">Tire Change</li>					
+				<li class="list-group-item">Kevin 8am - 4pm</li>
+				<li class="list-group-item">Joey 7am - 3pm</li>
+				<li class="list-group-item">Gary 10am - 1pm</li>					
 			</ul>
 		</div>
 	</div>
